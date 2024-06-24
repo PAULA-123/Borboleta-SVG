@@ -25,7 +25,33 @@ body {
 
 <body>
    
-   
+   <center><font size="5"><p> Para iniciar a produção da imagem svg, utilizei a paleta de cores da foto de uma plantação de lavanda. </p></font> <br /><p></center>
+  
+  <center>   
+ <p><img src="lavanda.png"middle"> </p></center> 
+
+ <center>
+ <p><img src="Paleta.png"middle"> </p></center> 
+
+
+
+<font size="5"><P>Com essas lindas cores, pensei em desenhar geométricamente, como um mosaíco, uma das coisas que tenho um certo fascínio, que é borboleta.</font><br /></P>
+
+<font size="5"><p>Para isso, usei o aplicativo Geogebra, de maneira a ter uma noção de onde ficariam os ponto das minhas primitivas gráficas.</font> <br /></p>
+
+
+<font size="5"><p>Depois de montar um lado da asa da borboleta, criei uma reta vertical que passaria exatamente no meio do desenho, de modo a fazer o outro lado simétrico com relação à reta. No geogebra eu usei a função que reflete os pontos em relação à reta. </font> <br /></p>
+
+
+<center>
+<p><img src="borboleta_geogebra.png" align="middle"> </p></center>
+
+
+
+
+
+
+   <font size="5"><p>Que no fim resultou na imagem svg a seguir:</p></font>
 
 <center>
 <svg height="1000" width="1000" xmlns="http://www.w3.org/2000/svg">
@@ -100,8 +126,8 @@ body {
   
   
   
-  <polygon points="520,500 620,500 620,570 " style="fill:#92927D;stroke:purple;stroke-width:1" />
-  <polygon points="520,500 620,570 560,620 " style="fill:#9D8D7D;stroke:purple;stroke-width:1" /> 
+   <polygon points="520,500 620,500 620,570 " style="fill:#92927D;stroke:purple;stroke-width:1" />
+    <polygon points="520,500 620,570 560,620 " style="fill:#9D8D7D;stroke:purple;stroke-width:1" /> 
 
    <!-- <polygon points="500,500 450,500  450,535" style="fill:#8D9379;stroke:purple;stroke-width:1" transform=" translate (1020,0)scale(-1,1)"/>
    <polygon points="500,500 450,535  490,530" style="fill:#8D9379;stroke:purple;stroke-width:1" transform=" translate (1020,0)scale(-1,1)"/> -->
@@ -128,22 +154,27 @@ body {
    <polygon points="620,570 620,670 560,620 " style="fill:#976983;stroke:purple;stroke-width:1" />
    
    
+   
+    
 
+    <circle cx="510" cy="450" r="15" stroke="purple" stroke-width="1" fill="#A4C969" />
    
    <polygon points="500,470 520,470 510,600 " style="fill:#A4C969;stroke:purple;stroke-width:1" />
 
    <line x1="470" y1="375" x2="510" y2="435" style="stroke:purple ;stroke-width:1" />
    <line x1="550" y1="375" x2="510" y2="435" style="stroke:purple ;stroke-width:1" />
-   
-   <circle cx= "510" cy="450" r="15" stroke="purple" stroke-width="1" fill="#A4C969" />
     
-   </svg>
-   </center>
+</svg>
+</center>
 
+<font size="5"><p>Por fim trago aqui uma breve explicação de qual era a tal função e seu papel:
+</p></font>
 
-   <p><center><font size="5">ALUNA: PAULA EDUARDA DE LIMA</font></center></p>
+<font size="5"><p>Como eu já havia escrito todas as linhas dos polígonos de uma das asas da borboleta, eu queria algo que só espelhase essas primitivas gráficas a partir de um eixo que seria o meio do desenho. Então a maneira que encontramos para fazer isso é usar "transform=" translate (1020,0) scale(-1,1)", o 'translate' vai mover o polígono no eixo x, basicamente para o que seria a outra asa, e o 'scale(-1, 1)', vai multipla os pontos x's dos vetores por -1, o que inverte a primitiva horizontalmente. Como exemplo, esta é uma das linhas do código que define um dos triângulos que fazem parte do mosaíco: <font color="#372773">"polygon points="500,500 460,400  400,500" style="fill:#C1D9B0;stroke:purple;stroke-width:1" transform=" translate (1020,0) scale(-1,1)"</font>"</p></font>
 
-   </body>
-   </html>
+<p><center><font size="5">ALUNA: PAULA EDUARDA DE LIMA</font></center></p>
+
+</body>
+</html>
 
 
